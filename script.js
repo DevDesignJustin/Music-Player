@@ -16,11 +16,12 @@ const songs = [
   'Stay',
   'You Belong With Me',
   '10-35',
-  'CHARGER'
+  'CHARGER',
+  'Cupid - Twin Ver'
 ];
 
 // Keep track of song
-let songIndex = 1;
+let songIndex = 0;
 
 // Song Artists
 const artists = [
@@ -30,11 +31,12 @@ const artists = [
   'The Kid LAROI, Justin Bieber',
   'Taylor Swift',
   'Tiesto, Tate McRae',
-  'JVKE, chillpill'
+  'JVKE, chillpill',
+  'FIFTY FIFTY (Sped Up)'
 ];
 
 // Keep track of Artist
-let artistsIndex = 1;
+let artistsIndex = 0;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex], artists[artistsIndex]);
@@ -68,12 +70,12 @@ function pauseSong() {
 function prevSong() {
   songIndex--;
   artistsIndex--;
-
+  
   if (songIndex < 0) {
     songIndex = songs.length - 1;
-    artistIndex = artists.length - 1;
+    artistsIndex = artists.length -1;
   }
-
+  
   loadSong(songs[songIndex], artists[artistsIndex]);
   playSong();
 }
@@ -119,6 +121,54 @@ playBtn.addEventListener('click', () => {
   }
 });
 
+// Change Song
+prevBtn.addEventListener('click', prevSong);
+nextBtn.addEventListener('click', nextSong);
+
+// Time/Song Update
+audio.addEventListener('timeupdate', updateProgress);
+
+// Click On Progress Bar
+progressContainer.addEventListener('click', setProgress);
+
+// Song Ends
+audio.addEventListener('ended', nextSong);
+// Change Song
+prevBtn.addEventListener('click', prevSong);
+nextBtn.addEventListener('click', nextSong);
+
+// Time/Song Update
+audio.addEventListener('timeupdate', updateProgress);
+
+// Click On Progress Bar
+progressContainer.addEventListener('click', setProgress);
+
+// Song Ends
+audio.addEventListener('ended', nextSong);
+// Change Song
+prevBtn.addEventListener('click', prevSong);
+nextBtn.addEventListener('click', nextSong);
+
+// Time/Song Update
+audio.addEventListener('timeupdate', updateProgress);
+
+// Click On Progress Bar
+progressContainer.addEventListener('click', setProgress);
+
+// Song Ends
+audio.addEventListener('ended', nextSong);
+// Change Song
+prevBtn.addEventListener('click', prevSong);
+nextBtn.addEventListener('click', nextSong);
+
+// Time/Song Update
+audio.addEventListener('timeupdate', updateProgress);
+
+// Click On Progress Bar
+progressContainer.addEventListener('click', setProgress);
+
+// Song Ends
+audio.addEventListener('ended', nextSong);
 // Change Song
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
