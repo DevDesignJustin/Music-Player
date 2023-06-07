@@ -10,9 +10,9 @@ const cover = document.getElementById('cover');
 
 // Song Titles
 const songs = [
-  'Sunroof',
-  'Never Go Wrong',
-  `I Don't Like Your Friends`,
+  `God's Plan`,
+  'Ransom',
+  `I Just Called`,
   'Stay',
   'You Belong With Me',
   '10-35',
@@ -24,9 +24,9 @@ let songIndex = 1;
 
 // Song Artists
 const artists = [
-  'Nicky Youre, Dazy',
-  'Nicky Youre, David Hugo',
-  'Halden Rule',
+  'Drake',
+  'Lil Tecca',
+  'NEIKED, Anne-Marie, Latto',
   'The Kid LAROI, Justin Bieber',
   'Taylor Swift',
   'Tiesto, Tate McRae',
